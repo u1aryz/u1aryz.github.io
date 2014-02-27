@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* line 4, ../scss/app-style.scss */
+body {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* 丸く切り抜く */
+/* line 22, ../scss/app-style.scss */
+.avatar img {
+  width: 96px;
+  height: 96px;
+  -webkit-border-radius: 96px;
+  -moz-border-radius: 96px;
+  -ms-border-radius: 96px;
+  -o-border-radius: 96px;
+  border-radius: 96px;
+}
+@media (min-width: 768px) {
+  /* line 22, ../scss/app-style.scss */
+  .avatar img {
+    width: 144px;
+    height: 144px;
+    -webkit-border-radius: 144px;
+    -moz-border-radius: 144px;
+    -ms-border-radius: 144px;
+    -o-border-radius: 144px;
+    border-radius: 144px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../scss/app-style.scss */
+  h1 {
+    font-size: 40px;
+  }
+}
+
+/* line 36, ../scss/app-style.scss */
+h3 {
+  font-weight: 200;
+  margin: 10px 0 20px;
+}
+@media (min-width: 768px) {
+  /* line 36, ../scss/app-style.scss */
+  h3 {
+    font-size: 30px;
+  }
+}
+
+/* line 44, ../scss/app-style.scss */
+p.lead {
+  color: #666;
+}
+
+/* line 50, ../scss/app-style.scss */
+.sites {
+  line-height: 48px;
+  margin: 50px 0 0;
+}
+/* line 55, ../scss/app-style.scss */
+.sites a img {
+  width: 44px;
+  height: 44px;
+  margin: 0 8px;
+}
+/* line 60, ../scss/app-style.scss */
+.sites a img:hover, .sites a img:focus {
+  width: 48px;
+  height: 48px;
+  margin: 0 6px;
+}
+/* line 67, ../scss/app-style.scss */
+.sites a:hover, .sites a:focus {
+  text-decoration: none;
+}
