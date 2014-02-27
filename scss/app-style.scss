@@ -1,0 +1,71 @@
+$bg-color: #333;
+$base-text-color: #fff;
+
+body {
+    background-color: $bg-color;
+    color: $base-text-color;
+    text-align: center;
+    padding: 50px 0;
+}
+
+@import "compass/css3/border-radius";
+
+/* 丸く切り抜く */
+@mixin circle-mask($size) {
+    width: $size;
+    height: $size;
+    @include border-radius($size);
+}
+
+$avatar-size: 144px;
+.avatar {
+    img {
+        @media (min-width: 768px) {
+            @include circle-mask($avatar-size);
+        }
+        @include circle-mask($avatar-size/1.5);
+    }
+}
+
+h1 {
+    @media (min-width: 768px) {
+        font-size: 40px;
+    }
+}
+
+h3 {
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
+    font-weight: 200;
+    margin: 10px 0 20px;
+}
+
+p.lead {
+    color: #666;
+}
+
+$site-image-size: 44px;
+$site-image-hover-size: 48px;
+.sites {
+    line-height: $site-image-hover-size;
+    margin: 50px 0 0;
+
+    a {
+        img {
+            width: $site-image-size;
+            height: $site-image-size;
+            margin: 0 8px;
+
+            &:hover, &:focus {
+                width: $site-image-hover-size;
+                height: $site-image-hover-size;
+                margin: 0 6px;
+            }
+        }
+
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+}
