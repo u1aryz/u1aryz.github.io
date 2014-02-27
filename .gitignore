@@ -1,0 +1,15 @@
+# Mac meta file
+.DS_Store
+
+# node modules
+node_modules/
+
+#ruby modules
+.bundle/
+ruby/
+
+# CSS file
+*.css
+
+# SASS cache
+.sass-cache/
