@@ -20,5 +20,11 @@ module.exports = (grunt) ->
     clean:
       src: ["<%= compass.dist.options.cssDir %>/*.css"]
 
+    notify:
+      compass:
+        options:
+          title: 'Task Complete'
+          message: 'Compiling to CSS is completed.'
+
   grunt.registerTask 'default', ['clean', 'compass']
-  grunt.registerTask 'css', ['compass']
+  grunt.registerTask 'css', ['compass', 'notify:compass']

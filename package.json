@@ -7,6 +7,7 @@
         "grunt": "~0.4.2",
         "grunt-contrib": "~0.8.0",
         "grunt-contrib-compass": "~0.6.0",
+        "grunt-notify": "~0.2.17",
         "load-grunt-tasks": "~0.3.0"
     }
 }
