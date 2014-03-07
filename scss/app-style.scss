@@ -47,9 +47,16 @@ p.lead {
 
 $site-image-size: 44px;
 $site-image-hover-size: 48px;
-.sites {
+ul.sites {
     line-height: $site-image-hover-size;
     margin: 50px 0 0;
+    padding-left: 0;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
 
     a {
         img {
@@ -60,7 +67,7 @@ $site-image-hover-size: 48px;
             &:hover, &:focus {
                 width: $site-image-hover-size;
                 height: $site-image-hover-size;
-                margin: 0 6px;
+                margin: -2px 6px;
             }
         }
 
