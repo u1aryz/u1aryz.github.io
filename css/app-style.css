@@ -4,11 +4,17 @@ body {
   background-color: #333333;
   color: white;
   text-align: center;
-  padding: 50px 0;
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  /* line 4, ../scss/app-style.scss */
+  body {
+    padding: 50px 0;
+  }
 }
 
 /* 丸く切り抜く */
-/* line 22, ../scss/app-style.scss */
+/* line 26, ../scss/app-style.scss */
 .avatar img {
   width: 96px;
   height: 96px;
@@ -19,7 +25,7 @@ body {
   border-radius: 96px;
 }
 @media (min-width: 768px) {
-  /* line 22, ../scss/app-style.scss */
+  /* line 26, ../scss/app-style.scss */
   .avatar img {
     width: 144px;
     height: 144px;
@@ -32,54 +38,60 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 30, ../scss/app-style.scss */
+  /* line 34, ../scss/app-style.scss */
   h1 {
     font-size: 40px;
   }
 }
 
-/* line 36, ../scss/app-style.scss */
+/* line 40, ../scss/app-style.scss */
 h3 {
   font-weight: 200;
   margin: 10px 0 20px;
 }
 @media (min-width: 768px) {
-  /* line 36, ../scss/app-style.scss */
+  /* line 40, ../scss/app-style.scss */
   h3 {
     font-size: 30px;
   }
 }
 
-/* line 44, ../scss/app-style.scss */
+/* line 48, ../scss/app-style.scss */
 p.lead {
   color: #666;
 }
 
-/* line 50, ../scss/app-style.scss */
+/* line 54, ../scss/app-style.scss */
 ul.sites {
   line-height: 48px;
-  margin: 50px 0 0;
   padding-left: 0;
+  margin: 30px 0 0;
 }
-/* line 55, ../scss/app-style.scss */
+@media (min-width: 768px) {
+  /* line 54, ../scss/app-style.scss */
+  ul.sites {
+    margin: 40px 0 0;
+  }
+}
+/* line 63, ../scss/app-style.scss */
 ul.sites li {
   list-style-type: none;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
-/* line 62, ../scss/app-style.scss */
+/* line 70, ../scss/app-style.scss */
 ul.sites a img {
   width: 44px;
   height: 44px;
   margin: 0 8px;
 }
-/* line 67, ../scss/app-style.scss */
+/* line 75, ../scss/app-style.scss */
 ul.sites a img:hover, ul.sites a img:focus {
   width: 48px;
   height: 48px;
   margin: -2px 6px;
 }
-/* line 74, ../scss/app-style.scss */
+/* line 82, ../scss/app-style.scss */
 ul.sites a:hover, ul.sites a:focus {
   text-decoration: none;
 }
