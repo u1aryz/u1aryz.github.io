@@ -56,23 +56,30 @@ p.lead {
 }
 
 /* line 50, ../scss/app-style.scss */
-.sites {
+ul.sites {
   line-height: 48px;
   margin: 50px 0 0;
+  padding-left: 0;
 }
 /* line 55, ../scss/app-style.scss */
-.sites a img {
+ul.sites li {
+  list-style-type: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 62, ../scss/app-style.scss */
+ul.sites a img {
   width: 44px;
   height: 44px;
   margin: 0 8px;
 }
-/* line 60, ../scss/app-style.scss */
-.sites a img:hover, .sites a img:focus {
+/* line 67, ../scss/app-style.scss */
+ul.sites a img:hover, ul.sites a img:focus {
   width: 48px;
   height: 48px;
-  margin: 0 6px;
+  margin: -2px 6px;
 }
-/* line 67, ../scss/app-style.scss */
-.sites a:hover, .sites a:focus {
+/* line 74, ../scss/app-style.scss */
+ul.sites a:hover, ul.sites a:focus {
   text-decoration: none;
 }
